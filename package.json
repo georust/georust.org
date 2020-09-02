@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PayasR/georust.github.io.git"
+    "url": "git+https://github.com/georust/georust.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PayasR/georust.github.io/issues"
+    "url": "https://github.com/georust/georust.github.io/issues"
   },
-  "homepage": "https://github.com/PayasR/georust.github.io#readme",
+  "homepage": "https://github.com/georust/georust.github.io#readme",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
