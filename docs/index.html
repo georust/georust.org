@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"./kkkkk>
+  <meta charset="UTF-8" ./kkkkk>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GeoRust</title>
@@ -15,41 +15,50 @@
     </a>
     <br>
   </div>
-  
-  <h1 class="text-6xl font-bold text-center text-gray-900">GeoRust</h1>
-      <p class="text-xl mt-2 text-center text-gray-900">
-        An ecosystem of geospatial tools and libraries written in Rust.
-      </p>
 
-      <div class="container flex mx-auto justify-center text-2xl font-black text-center mt-8 mb-10">
-        <a href="https://github.com/georust" class="float-left bg-indigo-900 text-white rounded-lg shadow-md px-4 py-2">GitHub</a>
-        <a href="https://discord.gg/Fp2aape" class="bg-indigo-900 text-white rounded-lg shadow-md ml-6 px-4 py-2">Discord</a>
-        <a href="https://opencollective.com/georust" class="float-right bg-indigo-900 text-white rounded-lg shadow-md px-6 py-2 ml-5">OpenCollective</a>
+  <h1 class="text-6xl font-bold text-center text-gray-900">GeoRust</h1>
+  <p class="text-xl mt-2 text-center text-gray-900">
+    An ecosystem of geospatial tools and libraries written in Rust.
+  </p>
+
+  <div class="container mx-auto">
+    <div class="flex flex-wrap mx-auto justify-center text-2xl text-white font-black mt-4 mb-10 px-4">
+      <div class="flex bg-indigo-900 rounded-lg shadow-md px-4 py-2 m-4"><a href="https://github.com/georust">GitHub</a>
       </div>
-      
-      <div class="container flex flex-col justify-center mx-auto px-10 text-2xl text-gray-900">
+      <div class="flex bg-indigo-900 rounded-lg shadow-md ml-4 px-4 py-2 m-4"><a
+          href="https://discord.gg/Fp2aape">Discord</a></div>
+      <div class="flex bg-indigo-900 rounded-lg shadow-md ml-4 px-4 py-2 m-4"><a
+          href="https://opencollective.com/georust">OpenCollective</a></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-10 text-2xl text-gray-900">
+    <div class="flex-col mx-auto justify-center max-w-3xl">
+      <div>
         <p class="font-black">Primitives</p>
-        <table class="table-auto font-bold bg-gray-300 mt-4 rounded-lg py-8 shadow-md w-2/4" >
+        <table class="table-fixed font-bold bg-gray-300 mt-4 rounded-lg py-8 shadow-md min-w-full">
           <tbody>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
-              <td class="px-4 py-3">Geo</td>
-              <td class="px-4 py-3 font-normal">Geospatial primitives such as Point & LineString, and algorithms such as distance, convex hull, centroid calculations.</td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geo">GitHub</a></td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geo">crates.io</a></td>
+            <tr>
+              <td class="w-1/6 px-4 py-3">Geo</td>
+              <td class="w-3/6 px-4 py-3 font-normal">Geospatial primitives such as Point & LineString, and algorithms
+                such as distance, convex hull, centroid calculations.</td>
+              <td class="w-1/6 px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geo">GitHub</a></td>
+              <td class="1-1/6 px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geo">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500">
+            <tr>
               <td class="px-4 py-3">GEOS</td>
               <td class="px-4 py-3 font-normal">Bindings for the Geometry Engine - Open Source (GEOS) library.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geos">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geos">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg">
+            <tr">
               <td class="px-4 py-3">PROJ</td>
-              <td class="px-4 py-3 font-normal">Bindings for the PROJ library for coordinate transformation and projections.</td>
+              <td class="px-4 py-3 font-normal">Bindings for the PROJ library for coordinate transformation and
+                projections.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/proj">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/proj">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500">
+            <tr>
               <td class="px-4 py-3">Robust</td>
               <td class="px-4 py-3 font-normal">Robust primitives for computational geometry.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/robust">GitHub</a></td>
@@ -57,98 +66,106 @@
             </tr>
           </tbody>
         </table>
-        
+      </div>
+
+      <div>
         <p class="font-black mt-8">Handling GIS data formats</p>
-        <table class="table-auto font-bold bg-gray-300 mt-4 rounded-lg py-8 shadow-md w-2/4 ">
+        <table class="table-fixed font-bold bg-gray-300 mt-4 rounded-lg py-8 shadow-md min-w-full">
           <tbody>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
-              <td class="px-4 py-3">GDAL</td>
-              <td class="px-4 py-3 font-normal">Bindings for the Geographic Data Abstraction Library (GDAL) for reading and writing raster and vector GIS files.</td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/gdal">GitHub</a></td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/">crates.io</a></td>
+            <tr>
+              <td class="w-1/6 px-4 py-3">GDAL</td>
+              <td class="w-3/6 px-4 py-3 font-normal">Bindings for the Geographic Data Abstraction Library (GDAL) for
+                reading and writing raster and vector GIS files.</td>
+              <td class="w-1/6 px-4 py-3 text-indigo-900"><a href="https://github.com/georust/gdal">GitHub</a></td>
+              <td class="w-1/6 px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">GeoJSON</td>
               <td class="px-4 py-3 font-normal">Work with GeoJSON files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geojson">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geojson">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">GPX</td>
               <td class="px-4 py-3 font-normal">Work with GPS files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/gpx">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/gpx">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">GeoTIFF</td>
               <td class="px-4 py-3 font-normal">Work with GeoTIFF raster files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geotiff">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geotiff">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">netCDF</td>
-              <td class="px-4 py-3 font-normal">Bindings for Network Common Data Form (NetCDF) library. Can read and write HDF5 files.</td>
+              <td class="px-4 py-3 font-normal">Bindings for Network Common Data Form (NetCDF) library. Can read and
+                write HDF5 files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geotiff">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geotiff">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">OSM</td>
               <td class="px-4 py-3 font-normal">Work with the OpenStreetMaps PBF files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/osm">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/osm">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">Shapefile</td>
               <td class="px-4 py-3 font-normal">Work with shape (SHP) files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/shapefile">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/shapefile">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">TileJSON</td>
               <td class="px-4 py-3 font-normal">Work with TileJSON files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/tilejson">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/tilejson">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">Transit</td>
               <td class="px-4 py-3 font-normal">Work with GTFS files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/transitfeed">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/transitfeed">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">WKT</td>
               <td class="px-4 py-3 font-normal">Work with Well-Known Text (WKT) files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/wkt">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/wkt">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500 hover:shadow-lg rounded-lg">
+            <tr>
               <td class="px-4 py-3">World-file</td>
               <td class="px-4 py-3 font-normal">Work with World-files.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/world-file">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/world-file">crates.io</a></td>
             </tr>
           </tbody>
-
         </table>
+      </div>
 
+      <div>
         <p class="font-black mt-8">Utilities</p>
-        <table class="table-auto font-bold bg-gray-300 mt-4 mb-16 rounded-lg py-8 shadow-md w-2/4">
+        <table class="table-fixed font-bold bg-gray-300 mt-4 mb-16 rounded-lg py-8 shadow-md min-w-full">
           <tbody>
-            <tr class="hover:bg-gray-500">
-              <td class="px-4 py-3">GeoHash</td>
-              <td class="px-4 py-3 font-normal">Compute geohash of locations.</td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geohash">GitHub</a></td>
-              <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geohash">crates.io</a></td>
+            <tr>
+              <td class="w-1/6 px-4 py-3">GeoHash</td>
+              <td class="w-3/6 px-4 py-3 font-normal">Compute geohash of locations.</td>
+              <td class="w-1/6 px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geohash">GitHub</a></td>
+              <td class="w-1/6 px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geohash">crates.io</a></td>
             </tr>
-            <tr class="hover:bg-gray-500">
+            <tr>
               <td class="px-4 py-3">Geocoding</td>
-              <td class="px-4 py-3 font-normal">Enrich addresses, cities, countries with geographic coordinates through third-party geocoding web services.</td>
+              <td class="px-4 py-3 font-normal">Enrich addresses, cities, countries with geographic coordinates through
+                third-party geocoding web services.</td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://github.com/georust/geocoding">GitHub</a></td>
               <td class="px-4 py-3 text-indigo-900"><a href="https://crates.io/crates/geocoding">crates.io</a></td>
             </tr>
           </tbody>
-          </table>
-        </div>
+        </table>
       </div>
+    </div>
+  </div>
 </body>
+
 </html>

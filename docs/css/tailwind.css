@@ -379,12 +379,6 @@ img {
   background-color: rgba(226, 232, 240, var(--bg-opacity));
 }
 
-.bg-gray-500 {
-  --bg-opacity: 1;
-  background-color: #a0aec0;
-  background-color: rgba(160, 174, 192, var(--bg-opacity));
-}
-
 .bg-indigo-900 {
   --bg-opacity: 1;
   background-color: #3c366b;
@@ -407,16 +401,12 @@ img {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-center {
   justify-content: center;
-}
-
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
 }
 
 .font-normal {
@@ -447,6 +437,10 @@ img {
   font-size: 4rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -460,12 +454,8 @@ img {
   margin-top: 1rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mt-8 {
@@ -478,6 +468,14 @@ img {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .py-2 {
@@ -493,11 +491,6 @@ img {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .py-8 {
@@ -519,12 +512,8 @@ img {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.table-auto {
-  table-layout: auto;
+.table-fixed {
+  table-layout: fixed;
 }
 
 .text-center {
@@ -549,8 +538,12 @@ img {
   color: rgba(60, 54, 107, var(--text-opacity));
 }
 
-.w-2 {
-  width: 0.5rem;
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 @keyframes spin {
