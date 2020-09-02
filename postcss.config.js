@@ -4,7 +4,7 @@ module.exports = {
     require('autoprefixer'),
     require('@fullhuman/postcss-purgecss')({
       content: [
-        './public/index.html'
+        './docs/index.html'
       ]
     })
   ]
